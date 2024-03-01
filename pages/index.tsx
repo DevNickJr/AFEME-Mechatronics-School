@@ -100,95 +100,95 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
       <div className="">
         {/* {loading && <Loader modalOpen={true} />} */}
         <Header />
-        <section className="section top-section pb-12 overflow-hidden lg:min-h-screen lg:mt-0 lg:pt-40">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
-            <div className="order-2 lg:order-1 flex flex-col gap-4">
-              {/* <p className="text-primary font-bold text-lg mb-3">STUDY WITH US</p> */}
-              <h1 className="text-4xl md:text-6xl font-extrabold capitalize mb-3">{cms?.hero?.header || "Free Scholarship For Every Bright Student"}</h1>
+        <section className="pb-12 overflow-hidden section top-section lg:min-h-screen lg:mt-0 lg:pt-40">
+          <div className="grid gap-8 lg:grid-cols-2 md:gap-12">
+            <div className="flex flex-col order-2 gap-4 lg:order-1">
+              {/* <p className="mb-3 text-lg font-bold text-primary">STUDY WITH US</p> */}
+              <h1 className="mb-3 text-4xl font-extrabold capitalize md:text-6xl">{cms?.hero?.header || "Free Scholarship For Every Bright Student"}</h1>
               <p className="md:text-lg">{cms?.hero?.text || "The Brilliant Brain Scholarship Scheme is a scholarship management platform with a vision to ensuring that no person of school age is denied access to education because of his or her financial status, since it is the fundamental right of every child to receive  qualitative and functional education"}</p>
-              <a href ="https://box.reinsys.net/brilliant/" className="flex justify-between items-center bg-gray-100 rounded-xl max-w-md text-sm md:text-base">
+              <a href ="https://box.reinsys.net/brilliant/" className="flex items-center justify-between max-w-md text-sm bg-gray-100 rounded-xl md:text-base">
                 <p className="ml-4">Lets get started</p>
-                {/* <a href={`https://box.reinsys.net/brilliant/`} className="grad-to-right text-white text-sm md:text-base px-6 py-3 rounded-xl w-fit">Connect with us</a> */}
-                <Button className="rounded-xl text-white py-3 md:py-4 px-5">Connect with us</Button>
+                {/* <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white grad-to-right md:text-base rounded-xl w-fit">Connect with us</a> */}
+                <Button className="px-5 py-3 text-white rounded-xl md:py-4">Connect with us</Button>
               </a>
             </div>
-            <div className="w-full min-h-96 order-1 lg:order-2 flex flex-col justify-end relative">
+            <div className="relative flex flex-col justify-end order-1 w-full min-h-96 lg:order-2">
               <Image width={100} height={100} src={cms?.hero?.image || HeroImg} alt="" className="object-contain object-top w-full h-full max-h-[450px]" />
-              <div className="absolute top-0 left-0 -z-10 w-full h-full flex justify-center items-center">
+              <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full -z-10">
                 <Image src={HeroBg} alt="" width={200} height={200} className="w-64 sm:w-1/2 md:w-5/6" />
               </div>
             </div>
           </div>
           {/* <div className="flex justify-center gap-2 py-12 mt-4">
-            <span className="text-xs w-4 h-1 rounded-full border-none text-primary bg-primary" />
+            <span className="w-4 h-1 text-xs border-none rounded-full text-primary bg-primary" />
           </div> */}
         </section>
         <section className="section">
-          <div className="grid lg:grid-cols-2 gap-4 md:gap-12">
-            <div className="flex-1 order-2 lg:order-1 flex flex-col gap-4">
-              {/* <p className="text-primary font-bold text-xl mb-3">About Us</p> */}
-              <h2 className="text-4xl md:text-6xl font-extrabold capitalize mb-3">{cms?.about?.header || "Qualified and Highly Equipped Learning"}</h2>
-              <p className="md:text-lg mb-4">{cms?.about?.text || "We take pride in offering a learning environment that is led by qualified and dedicated educators. Our teaching staff consists of highly experienced professionals who are passionate about fostering academic growth and empowering students to reach their full potential"}</p>
-              <Button onClick={() => router.push('/about-us')} className="w-fit rounded-xl text-white py-3 md:py-4 px-5 text-sm md:text-base">Read More</Button>
+          <div className="grid gap-4 lg:grid-cols-2 md:gap-12">
+            <div className="flex flex-col flex-1 order-2 gap-4 lg:order-1">
+              {/* <p className="mb-3 text-xl font-bold text-primary">About Us</p> */}
+              <h2 className="mb-3 text-4xl font-extrabold capitalize md:text-6xl">{cms?.about?.header || "Qualified and Highly Equipped Learning"}</h2>
+              <p className="mb-4 md:text-lg">{cms?.about?.text || "We take pride in offering a learning environment that is led by qualified and dedicated educators. Our teaching staff consists of highly experienced professionals who are passionate about fostering academic growth and empowering students to reach their full potential"}</p>
+              <Button onClick={() => router.push('/about-us')} className="px-5 py-3 text-sm text-white w-fit rounded-xl md:py-4 md:text-base">Read More</Button>
 
             </div>
-            <div className="w-full h-full min-h-96 order-1 lg:order-2 flex flex-col  justify-end relative">
+            <div className="relative flex flex-col justify-end order-1 w-full h-full min-h-96 lg:order-2">
               <Image width={100} height={100} src={cms?.about?.image || QualifiedImg} alt="" className="object-contain w-full max-h-[500px]" />
-              <div className="absolute top-0 left-0 -z-10 w-full h-full flex justify-center items-center">
+              <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full -z-10">
                 <Image src={HeroBg} alt="" width={200} height={200} className="w-64 sm:w-1/2 md:w-5/6" />
               </div>
             </div>
           </div>
         </section>
-        {/* <section className="section py-12 md:py-20 px-4 flex flex-col items-center gap-4 grad-to-right text-white">
-          <div className="flex flex-col items-center gap-4 max-w-3xl text-center">
-            <h3 className="text-3xl md:text-5xl font-extrabold capitalize mb-2">Looking for a bright new future. It starts here</h3>
+        {/* <section className="flex flex-col items-center gap-4 px-4 py-12 text-white section md:py-20 grad-to-right">
+          <div className="flex flex-col items-center max-w-3xl gap-4 text-center">
+            <h3 className="mb-2 text-3xl font-extrabold capitalize md:text-5xl">Looking for a bright new future. It starts here</h3>
             <p className="mb-4">We understand that you&#39;re looking for a bright new future, filled with endless possibilities and opportunities for personal and professional growth. Your quest for a better tomorrow starts right here, with us.</p>
-            <button className="p-5 rounded-full font-bold bg-white text-black py-3 md:py-5 px-6 text-sm md:text-base md:px-10">Get in Touch</button>
+            <button className="p-5 px-6 py-3 text-sm font-bold text-black bg-white rounded-full md:py-5 md:text-base md:px-10">Get in Touch</button>
           </div>
         </section> */}
-        <section className="section py-12 md:py-20 text-center">
-          <div className="flex flex-col items-center gap-4 max-w-2xl mx-auto mb-12">
-            {/* <h2 className="text-primary font-bold text-2xl">Our Programmes</h2> */}
-            <h3 className="text-3xl md:text-5xl font-extrabold capitalize mb-3">
+        <section className="py-12 text-center section md:py-20">
+          <div className="flex flex-col items-center max-w-2xl gap-4 mx-auto mb-12">
+            {/* <h2 className="text-2xl font-bold text-primary">Our Programmes</h2> */}
+            <h3 className="mb-3 text-3xl font-extrabold capitalize md:text-5xl">
               Available Scholarship Levels
             </h3>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+          <div className="grid gap-8 text-white md:grid-cols-2 lg:grid-cols-4">
+            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
               <Image src={Primary1Img} alt="" className="w-16 h-16" />
-              <h5 className="text-2xl font-extrabold capitalize mb-3">Primary Education</h5>
-              <p className="text-[#6D6D6D]">Building Strong Foundations for Lifelong Learning</p>
+              <h5 className="mb-3 text-2xl font-extrabold capitalize">Primary Education</h5>
+              <p className="text-white">Building Strong Foundations for Lifelong Learning</p>
             </div>
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
               <Image src={SecondaryImg} alt="" className="w-16 h-16" />
-              <h5 className="text-2xl font-extrabold capitalize mb-3">Secondary Education</h5>
-              <p className="text-[#6D6D6D]">Preparing Students for Success in a Dynamic World</p>
+              <h5 className="mb-3 text-2xl font-extrabold capitalize">Secondary Education</h5>
+              <p className="text-white">Preparing Students for Success in a Dynamic World</p>
             </div>
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
               <Image src={UniversityImg} alt="" className="w-16 h-16" />
-              <h5 className="text-2xl font-extrabold capitalize mb-3">Undergraduate Education</h5>
-              <p className="text-[#6D6D6D]">Unlocking Your Potential for Advanced Learning</p>
+              <h5 className="mb-3 text-2xl font-extrabold capitalize">Undergraduate Education</h5>
+              <p className="text-white">Unlocking Your Potential for Advanced Learning</p>
             </div>
-            <div className="bg-[#F9E9E8] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
               <Image src={PostGradImg} alt="" className="w-16 h-16" />
-              <h5 className="text-2xl font-extrabold capitalize mb-3">Postgraduate Education</h5>
-              <p className="text-[#6D6D6D]">Elevate Your Expertise and Propel Your Career Forward</p>
+              <h5 className="mb-3 text-2xl font-extrabold capitalize">Postgraduate Education</h5>
+              <p className="text-white">Elevate Your Expertise and Propel Your Career Forward</p>
             </div>
           </div>
         </section>
-        {/* <section className="section py-12 md:py-20">
-          <div className="flex flex-col items-center gap-4 max-w-xl mx-auto mb-12 text-center">
-            <h3 className="text-3xl md:text-5xl font-extrabold capitalize mb-3">Which One is Suitable For You</h3>
+        {/* <section className="py-12 section md:py-20">
+          <div className="flex flex-col items-center max-w-xl gap-4 mx-auto mb-12 text-center">
+            <h3 className="mb-3 text-3xl font-extrabold capitalize md:text-5xl">Which One is Suitable For You</h3>
             <p>Are you a student that needs a scholarship? or a teacher who wish to Upgrade his/her Knowledge </p>
           </div>
-          <div className="flex flex-col items-center lg:flex-row md:justify-center gap-8">
-            <div className="max-w-md p-4 px-6 py-8 md:p-20 shadow-xl flex flex-col justify-center rounded-xl">
-              <div className="max-w-sm flex flex-col gap-4 justify-center text-center mb-8">
-                <Image src={StudentImg} alt="" className="h-44 w-44 rounded-full mx-auto" />
-                <h4 className="text-xl md:text-2xl font-bold">Student</h4>
+          <div className="flex flex-col items-center gap-8 lg:flex-row md:justify-center">
+            <div className="flex flex-col justify-center max-w-md p-4 px-6 py-8 shadow-xl md:p-20 rounded-xl">
+              <div className="flex flex-col justify-center max-w-sm gap-4 mb-8 text-center">
+                <Image src={StudentImg} alt="" className="mx-auto rounded-full h-44 w-44" />
+                <h4 className="text-xl font-bold md:text-2xl">Student</h4>
               </div>
-              <div className="flex flex-col gap-3 font-bold mb-12 text-sm md:text-base">
+              <div className="flex flex-col gap-3 mb-12 text-sm font-bold md:text-base">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px]"></div>
                   <p>Financial support for education expenses</p>
@@ -202,14 +202,14 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
                   <p>Personal and professional growth opportunities</p>
                 </div>
               </div>
-              <Button className="md:px-8 w-fit rounded-full mx-auto text-white py-3 md:py-4 px-5 text-sm md:text-base whitespace-nowrap font-semibold">View Details</Button>
+              <Button className="px-5 py-3 mx-auto text-sm font-semibold text-white rounded-full md:px-8 w-fit md:py-4 md:text-base whitespace-nowrap">View Details</Button>
             </div>
-            <div className="max-w-md p-4 px-6 py-8 md:p-20 shadow-xl flex flex-col justify-center rounded-xl grad-to-right text-white">
-              <div className="max-w-sm flex flex-col gap-4 justify-center text-center mb-8">
-                <Image src={TeacherImg} alt="" className="h-44 w-44 rounded-full mx-auto" />
-                <h4 className="text-xl md:text-2xl font-bold">Teacher</h4>
+            <div className="flex flex-col justify-center max-w-md p-4 px-6 py-8 text-white shadow-xl md:p-20 rounded-xl grad-to-right">
+              <div className="flex flex-col justify-center max-w-sm gap-4 mb-8 text-center">
+                <Image src={TeacherImg} alt="" className="mx-auto rounded-full h-44 w-44" />
+                <h4 className="text-xl font-bold md:text-2xl">Teacher</h4>
               </div>
-              <div className="flex flex-col gap-3 font-bold mb-12 text-sm md:text-base">
+              <div className="flex flex-col gap-3 mb-12 text-sm font-bold md:text-base">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px]"></div>
                   <p>Professional development support</p>
@@ -223,67 +223,67 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
                   <p>Networking and collaboration opportunities</p>
                 </div>
               </div>
-              <Button gradient='bg-white' className="md:px-8 w-fit rounded-full mx-auto bg-white text-primary py-3 md:py-4 px-5 text-sm md:text-base whitespace-nowrap font-semibold">View Details</Button>
+              <Button gradient='bg-white' className="px-5 py-3 mx-auto text-sm font-semibold bg-white rounded-full md:px-8 w-fit text-primary md:py-4 md:text-base whitespace-nowrap">View Details</Button>
             </div>
           </div>
         </section> */}
        {/* <Ambassadors /> */}
         
         {/* <Winners /> */}
-        <section className="section py-12 md:py-20 grad-to-right">
-          <div className="grid lg:grid-cols-2 gap-4 md:gap-12 text-white">
-            <div className="flex-1 flex flex-col gap-4 md:pb-16">
-              <h2 className="text-3xl md:text-5xl font-extrabold capitalize mb-3">Become Part of Us on Our Platform</h2>
-              <p className="md:text-lg mb-4">The Brilliant Brain Scholarship Scheme is a scholarship management platform with a vision to ensuring that no person of school age is denied access to education because of his or her financial status, since it is the fundamental right of every child to receive  qualitative and functional education</p>
+        <section className="py-12 section md:py-20 grad-to-right">
+          <div className="grid gap-4 text-white lg:grid-cols-2 md:gap-12">
+            <div className="flex flex-col flex-1 gap-4 md:pb-16">
+              <h2 className="mb-3 text-3xl font-extrabold capitalize md:text-5xl">Become Part of Us on Our Platform</h2>
+              <p className="mb-4 md:text-lg">The Brilliant Brain Scholarship Scheme is a scholarship management platform with a vision to ensuring that no person of school age is denied access to education because of his or her financial status, since it is the fundamental right of every child to receive  qualitative and functional education</p>
               <div className="grid grid-cols-2 gap-5 mb-4 max-w-fit">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px] flex justify-center items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
                       <AiOutlineCheck className="text-primary" />
                     </div>
                     <p>Primary Education</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px] flex justify-center items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
                       <AiOutlineCheck className="text-primary" />
                     </div>
                     <p>Secondary Education</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px] flex justify-center items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
                       <AiOutlineCheck className="text-primary" />
                     </div>
                     <p>Undergraduate Education</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-red-100 flex-[0_0_32px] flex justify-center items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
                       <AiOutlineCheck className="text-primary" />
                     </div>
                     <p>Postgraduate Education</p>
                   </div>
               </div>
-              <a href={`https://box.reinsys.net/brilliant/`} className="bg-yellow-400 text-white text-sm md:text-base px-6 py-3 rounded-xl w-fit">Apply Now</a>
+              <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white bg-[#FFA07A] md:text-base rounded-xl w-fit">Apply Now</a>
             </div>
             <div className="w-full h-full min-h-96 md:min-h-[500px] relative flex justify-center items-center">
-              <div className="absolute -z-0 flex justify-center items-center bg-yellow-400 rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
-              <Image src={GradImg} alt="" className="h-full w-full object-cover z-10 relative" />
+              <div className="absolute -z-0 flex justify-center items-center bg-[#FFA07A] rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
+              <Image src={GradImg} alt="" className="relative z-10 object-cover w-full h-full" />
             </div>
           </div>
         </section>
-        <section className="section py-12 md:py-20">
-          <h2 className="text-3xl md:text-5xl font-extrabold capitalize mb-12 text-center">News & <br />Updates</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+        <section className="py-12 section md:py-20">
+          <h2 className="mb-12 text-3xl font-extrabold text-center capitalize md:text-5xl">News & <br />Updates</h2>
+          <div className="grid gap-8 md:grid-cols-3">
             {news?.slice(0, 3).map( (item, index) => (
               <NewsCard key={index} news={item} />
             ))}
           </div>
-          {/* <div className="grid md:grid-cols-3 gap-8">
+          {/* <div className="grid gap-8 md:grid-cols-3">
             {news?.slice(0, 3).map( (item, index) => (
-            <Link href="/news" key={index} className="w-full flex flex-col gap-2 place-self-start shadow-md rounded-xl">
-              <Image src={item?.image || NewsImg} width={150} height={150} alt="" className="h-64 w-full object-cover rounded-xl z-10 relative" />
+            <Link href="/news" key={index} className="flex flex-col w-full gap-2 shadow-md place-self-start rounded-xl">
+              <Image src={item?.image || NewsImg} width={150} height={150} alt="" className="relative z-10 object-cover w-full h-64 rounded-xl" />
               <div className="p-2 px-4 pb-4">
-                <h3 className="text-xl font-bold font-argentinum h-14 overflow-hidden mb-3">{item?.title}</h3>
-                <p className="text-xs h-12 overflow-hidden mb-3">{item?.snippet}</p>
-                <span className="text-primary font-bold text-xs">
+                <h3 className="mb-3 overflow-hidden text-xl font-bold font-argentinum h-14">{item?.title}</h3>
+                <p className="h-12 mb-3 overflow-hidden text-xs">{item?.snippet}</p>
+                <span className="text-xs font-bold text-primary">
                   Read more
                 </span>
               </div>
@@ -291,32 +291,32 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
             ))}
           </div> */}
         </section>
-        {/* <section className="section py-12 md:py-20 grad-to-right">
-          <div className="grid lg:grid-cols-2 gap-4 md:gap-12 text-white">
-            <div className="flex-1 flex flex-col gap-4">
-              <h3 className="text-3xl md:text-5xl font-extrabold capitalize mb-3">Sign up for Our Scholarship Program Now</h3>
-              <p className="text-sm md:text-base mb-4">The Brilliant Brain Scholarship Scheme is a scholarship management platform with a vision to ensuring that no person of school age is denied access to education because of his or her financial</p>
+        {/* <section className="py-12 section md:py-20 grad-to-right">
+          <div className="grid gap-4 text-white lg:grid-cols-2 md:gap-12">
+            <div className="flex flex-col flex-1 gap-4">
+              <h3 className="mb-3 text-3xl font-extrabold capitalize md:text-5xl">Sign up for Our Scholarship Program Now</h3>
+              <p className="mb-4 text-sm md:text-base">The Brilliant Brain Scholarship Scheme is a scholarship management platform with a vision to ensuring that no person of school age is denied access to education because of his or her financial</p>
             </div>
-            <form className="flex-1 flex flex-col gap-4 w-full text-black" onSubmit={addCandidate}>
-              <input required onChange={(e) => dispatch({ type: 'name', payload: e.target.value })} value={candidate?.name} className="p-4 px-5 text-sm md:p-5 md:px-8 rounded-full" type="text" name="name" id="name" placeholder="Full Name" />
-              <input required onChange={(e) => dispatch({ type: 'email', payload: e.target.value })} value={candidate?.email} className="p-4 px-5 text-sm md:p-5 md:px-8 rounded-full" type="email" name="email" id="email" placeholder="Enter your email address" />
-              <input required onChange={(e) => dispatch({ type: 'number', payload: e.target.value })} value={candidate?.number} className="p-4 px-5 text-sm md:p-5 md:px-8 rounded-full" type="tel" name="number" id="number" placeholder="Enter your Phone Number" />
-              <select required onChange={(e) => dispatch({ type: 'category', payload: e.target.value })} value={candidate?.category} className="p-4 px-5 text-sm md:p-5 md:px-8 rounded-full text-black/60" name="category" id="category">
+            <form className="flex flex-col flex-1 w-full gap-4 text-black" onSubmit={addCandidate}>
+              <input required onChange={(e) => dispatch({ type: 'name', payload: e.target.value })} value={candidate?.name} className="p-4 px-5 text-sm rounded-full md:p-5 md:px-8" type="text" name="name" id="name" placeholder="Full Name" />
+              <input required onChange={(e) => dispatch({ type: 'email', payload: e.target.value })} value={candidate?.email} className="p-4 px-5 text-sm rounded-full md:p-5 md:px-8" type="email" name="email" id="email" placeholder="Enter your email address" />
+              <input required onChange={(e) => dispatch({ type: 'number', payload: e.target.value })} value={candidate?.number} className="p-4 px-5 text-sm rounded-full md:p-5 md:px-8" type="tel" name="number" id="number" placeholder="Enter your Phone Number" />
+              <select required onChange={(e) => dispatch({ type: 'category', payload: e.target.value })} value={candidate?.category} className="p-4 px-5 text-sm rounded-full md:p-5 md:px-8 text-black/60" name="category" id="category">
                 <option className="text-black/60" value="">Select category</option>
                 <option value="primary">Primary</option>
                 <option value="secondary">Secondary</option>
                 <option value="undergraduate">Undergraduate</option>
                 <option value="postgraduate">Postgraduate</option>
               </select>
-              <button className="bg-black text-white font-medium text-sm md:text-base px-8 md:px-12 py-4 md:py-4 rounded-full w-fit">Sign Up</button>
+              <button className="px-8 py-4 text-sm font-medium text-white bg-black rounded-full md:text-base md:px-12 md:py-4 w-fit">Sign Up</button>
             </form>
           </div>
         </section> */}
-          <section id="signup" className="section py-12 md:py-20 px-4 flex flex-col items-center gap-4 grad-to-right text-white">
-          <div className="flex flex-col items-center gap-4 max-w-3xl text-center">
-            <h3 className="text-3xl md:text-5xl font-extrabold capitalize mb-2">Sign up for Our Scholarship Program Now</h3>
+          <section id="signup" className="flex flex-col items-center gap-4 px-4 py-12 text-white section md:py-20 grad-to-right">
+          <div className="flex flex-col items-center max-w-3xl gap-4 text-center">
+            <h3 className="mb-2 text-3xl font-extrabold capitalize md:text-5xl">Sign up for Our Scholarship Program Now</h3>
             <p className="mb-4">We understand that you&#39;re looking for a bright new future, filled with endless possibilities and opportunities for personal and professional growth. Your quest for a better tomorrow starts right here, with us.</p>
-            <a href={'https://box.reinsys.net/brilliant/'} className="p-5 rounded-full font-bold bg-white text-black py-3 md:py-5 px-6 text-sm md:text-base md:px-10">Sign Up</a>
+            <a href={'https://box.reinsys.net/brilliant/'} className="p-5 px-6 py-3 text-sm font-bold text-black bg-white rounded-full md:py-5 md:text-base md:px-10">Sign Up</a>
           </div>
         </section>
         <Advisory advisory={advisory} />

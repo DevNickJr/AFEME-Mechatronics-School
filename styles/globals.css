@@ -34,6 +34,17 @@
 
 
 .grad-to-bottom {
+    background-image: linear-gradient(to bottom, #87CEEB, #ADD8E6, #B0E0E6);
+  }
+.grad-to-top {
+    background-image: linear-gradient(to top, #B0E0E6, #ADD8E6, #87CEEB);
+  }
+  
+.grad-to-right {
+    background-image: linear-gradient(to right, #B0E0E6, #ADD8E6, #87CEEB);
+  }
+
+/* .grad-to-bottom {
     background-image: linear-gradient(to bottom, #D42F27,#D93C29,#F6792E);
   }
 .grad-to-top {
@@ -42,8 +53,8 @@
   
 .grad-to-right {
     background-image: linear-gradient(to right,#F6792E, #D93C29, #D42F27);
-  }
-  
+  } 
+   */
   
 .no-scrollbar::-webkit-scrollbar {
     display: none;

@@ -21,20 +21,20 @@ const Header = () => {
             <li><Link href="/" className={`pb-1.5 px-1 font-medium`}>Home</Link></li>
             <li><Link href="/about-us" className={`pb-1.5 px-1 font-medium`}>About</Link></li>
             {/* <li><Link href="/" className={`pb-1.5 px-1 font-medium`}>Scholarship</Link></li> */}
-            <li><Link href="/winners" className={`pb-1.5 px-1 font-medium`}>Winners</Link></li>
+            {/* <li><Link href="/winners" className={`pb-1.5 px-1 font-medium`}>Winners</Link></li> */}
             <li><Link href="/ambassadors" className={`pb-1.5 px-1 font-medium`}>Ambassadors</Link></li>
             <li><Link href="/news" className={`pb-1.5 px-1 font-medium`}>News</Link></li>
-            <li><Link href="/scholarships" className={`pb-1.5 px-1 font-medium`}>Available Scholarship</Link></li>
+            {/* <li><Link href="/scholarships" className={`pb-1.5 px-1 font-medium`}>Available Scholarship</Link></li> */}
             <li><Link href="/contact-us" className={`pb-1.5 px-1 font-medium`}>Contact Us</Link></li>
             <li><Link href="/faqs" className={`pb-1.5 px-1 font-medium`}>FAQs</Link></li>
             <li className='relative bg-white cursor-pointer group'>
               <span className={`pb-1.5 px-1 font-medium`}>Login</span>
               <div className='absolute left-0 flex-col hidden gap-2 bg-white shadow-md top-6 group-hover:flex'>
-                <a href={`https://box.reinsys.net/brilliant/`} className='py-2 border-b-2'>
+                {/* <a href={`https://box.reinsys.net/brilliant/`} className='py-2 border-b-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
                     User
                   </span>
-                </a>
+                </a> */}
                 <Link href={`/login`} className='pb-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
                     Admin
@@ -65,20 +65,20 @@ const Header = () => {
             <li><Link href="/" className={`pb-1.5 px-1 font-medium`}>Home</Link></li>
             <li><Link href="/about-us" className={`pb-1.5 px-1 font-medium`}>About</Link></li>
             {/* <li><Link href="/" className={`pb-1.5 px-1 font-medium`}>Scholarship</Link></li> */}
-            <li><Link href="/winners" className={`pb-1.5 px-1 font-medium`}>Winners</Link></li>
+            {/* <li><Link href="/winners" className={`pb-1.5 px-1 font-medium`}>Winners</Link></li> */}
             <li><Link href="/ambassadors" className={`pb-1.5 px-1 font-medium`}>Ambassadors</Link></li>
             <li><Link href="/news" className={`pb-1.5 px-1 font-medium`}>News</Link></li>
-            <li><Link href="/scholarships" className={`pb-1.5 px-1 font-medium`}>Available Scholarships</Link></li>
+            {/* <li><Link href="/scholarships" className={`pb-1.5 px-1 font-medium`}>Available Scholarships</Link></li> */}
             <li><Link href="/contact-us" className={`pb-1.5 px-1 font-medium`}>Contact Us</Link></li>
             <li><Link href="/faqs" className={`pb-1.5 px-1 font-medium`}>FAQs</Link></li>
             <li className='relative bg-white cursor-pointer group'>
               <span className={`pb-1.5 px-1 font-medium`}>Login</span>
               <div className='absolute left-0 flex-col hidden gap-2 bg-white shadow-md top-6 group-hover:flex'>
-                <a href={`https://box.reinsys.net/brilliant/`} className='py-2 border-b-2'>
+                {/* <a href={`https://box.reinsys.net/brilliant/`} className='py-2 border-b-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
                     User
                   </span>
-                </a>
+                </a> */}
                 <Link href={`/login`} className='pb-2'>
                   <span className={`py-2 pb-2.5 px-6 text-xs font-medium`}>
                     Admin

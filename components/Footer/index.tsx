@@ -3,16 +3,18 @@ import Logo from "@/assets/logo.jpg"
 import Link from 'next/link'
 import Image from 'next/image'
 import Socials from '../Socials'
+import appConfig from '@/configs/app.config'
+
 
 
 const Footer = () => {
 
   return (
       <footer className=''>
-        {/* <div className='py-12 md:py-20 section grid grid-cols-2 gap-12 md:grid-cols-4 grad-to-right text-white'>
+        {/* <div className='grid grid-cols-2 gap-12 py-12 text-white md:py-20 section md:grid-cols-4 grad-to-right'>
             <div>
-              <h4 className='md:text-lg font-extrabold mb-3'>Company</h4>
-              <ul className='text-footer-gray text-sm flex flex-col gap-2'>
+              <h4 className='mb-3 font-extrabold md:text-lg'>Company</h4>
+              <ul className='flex flex-col gap-2 text-sm text-footer-gray'>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Portfolio</li>
@@ -21,8 +23,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className='md:text-lg font-extrabold mb-3'>Resources</h4>
-              <ul className='text-footer-gray text-sm flex flex-col gap-2'>
+              <h4 className='mb-3 font-extrabold md:text-lg'>Resources</h4>
+              <ul className='flex flex-col gap-2 text-sm text-footer-gray'>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Portfolio</li>
@@ -31,8 +33,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className='md:text-lg font-extrabold mb-3'>Legal</h4>
-              <ul className='text-footer-gray text-sm flex flex-col gap-2'>
+              <h4 className='mb-3 font-extrabold md:text-lg'>Legal</h4>
+              <ul className='flex flex-col gap-2 text-sm text-footer-gray'>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Portfolio</li>
@@ -41,8 +43,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className='md:text-lg font-extrabold mb-3'>Social Media</h4>
-              <ul className='text-footer-gray text-sm flex flex-col gap-2'>
+              <h4 className='mb-3 font-extrabold md:text-lg'>Social Media</h4>
+              <ul className='flex flex-col gap-2 text-sm text-footer-gray'>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Portfolio</li>
@@ -51,21 +53,21 @@ const Footer = () => {
               </ul>
             </div>
           </div> */}
-          {/* <p className='py-4 md:py-6 section grad-to-right text-white text-center'>© Copyright © 2022 Brilliant Brain Scholarships Scheme Is Managed By Meekhaael Solutions Limited</p> */}
-          {/* <section className="section py-3">
+          {/* <p className='py-4 text-center text-white md:py-6 section grad-to-right'>© Copyright © 2022 Brilliant Brain Scholarships Scheme Is Managed By Meekhaael Solutions Limited</p> */}
+          {/* <section className="py-3 section">
             <div className="flex items-center gap-7">
               <Link href={"/"}>
                 <Image src={Logo} className='w-20 h-16' alt=''></Image>
               </Link>
-              <p className="font-extrabold text-sm md:text-xl">
+              <p className="text-sm font-extrabold md:text-xl">
                 BRILLIANT-BRAIN SCHOLARSHIP 2023
               </p>
             </div>
           </section> */}
-          <div className='py-6 md:py-10 section grad-to-right text-white'>
+          <div className='py-6 text-white md:py-10 section grad-to-right'>
             <Socials />
-            <p className='text-center mt-3'>
-              @2021 Brilliant Brain Scholarship Scheme. All Rights Reserved.
+            <p className='mt-3 text-center'>
+              @2024 {appConfig.appName} Scheme. All Rights Reserved.
             </p>
           </div>
       </footer>
