@@ -11,7 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
-    <div className='section flex items-center justify-between bg-white text-black shadow-md py-2 md:py-5 fixed top-0 left-0 z-30 w-full min-h-[50px]'>
+    <div className='section flex items-center justify-between bg-white text-black shadow-sm py-2 md:py-5 fixed top-0 left-0 z-30 w-full min-h-[50px]'>
     <header className='flex items-center justify-between w-full '>
         <Link href={"/"}>
           <Image src={Logo} className='w-12 h-12 md:h-12' alt='' />
