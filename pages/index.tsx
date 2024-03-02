@@ -156,22 +156,22 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
             </h3>
           </div>
           <div className="grid gap-8 text-white md:grid-cols-2 lg:grid-cols-4">
-            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
               <Image src={Primary1Img} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Primary Education</h5>
               <p className="text-white">Building Strong Foundations for Lifelong Learning</p>
             </div>
-            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
               <Image src={SecondaryImg} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Secondary Education</h5>
               <p className="text-white">Preparing Students for Success in a Dynamic World</p>
             </div>
-            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
               <Image src={UniversityImg} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Undergraduate Education</h5>
               <p className="text-white">Unlocking Your Potential for Advanced Learning</p>
             </div>
-            <div className="bg-[#FFA07A] w-full rounded-2xl p-8 py-12 flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
               <Image src={PostGradImg} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Postgraduate Education</h5>
               <p className="text-white">Elevate Your Expertise and Propel Your Career Forward</p>
@@ -238,34 +238,34 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
               <p className="mb-4 md:text-lg">The Brilliant Brain Scholarship Scheme is a scholarship management platform with a vision to ensuring that no person of school age is denied access to education because of his or her financial status, since it is the fundamental right of every child to receive  qualitative and functional education</p>
               <div className="grid grid-cols-2 gap-5 mb-4 max-w-fit">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
-                      <AiOutlineCheck className="text-primary" />
+                    <div className="w-8 h-8 rounded-full bg-gold text-white flex-[0_0_32px] flex justify-center items-center">
+                      <AiOutlineCheck className="" />
                     </div>
                     <p>Primary Education</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
-                      <AiOutlineCheck className="text-primary" />
+                    <div className="w-8 h-8 rounded-full bg-gold text-white flex-[0_0_32px] flex justify-center items-center">
+                      <AiOutlineCheck className="" />
                     </div>
                     <p>Secondary Education</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
-                      <AiOutlineCheck className="text-primary" />
+                    <div className="w-8 h-8 rounded-full bg-gold text-white flex-[0_0_32px] flex justify-center items-center">
+                      <AiOutlineCheck className="" />
                     </div>
                     <p>Undergraduate Education</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-[#98FB98] flex-[0_0_32px] flex justify-center items-center">
-                      <AiOutlineCheck className="text-primary" />
+                    <div className="w-8 h-8 rounded-full bg-gold text-white flex-[0_0_32px] flex justify-center items-center">
+                      <AiOutlineCheck className="" />
                     </div>
                     <p>Postgraduate Education</p>
                   </div>
               </div>
-              <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white bg-[#FFA07A] md:text-base rounded-xl w-fit">Apply Now</a>
+              <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white bg-gold md:text-base rounded-xl w-fit">Apply Now</a>
             </div>
             <div className="w-full h-full min-h-96 md:min-h-[500px] relative flex justify-center items-center">
-              <div className="absolute -z-0 flex justify-center items-center bg-[#FFA07A] rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
+              <div className="absolute -z-0 flex justify-center items-center bg-gold rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
               <Image src={GradImg} alt="" className="relative z-10 object-cover w-full h-full" />
             </div>
           </div>
