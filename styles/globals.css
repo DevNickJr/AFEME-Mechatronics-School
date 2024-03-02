@@ -34,6 +34,26 @@
 
 
 .grad-to-bottom {
+    background-image: linear-gradient(to bottom, #090f3b, #090f3b, #090f3b);
+  }
+.grad-to-top {
+    background-image: linear-gradient(to top, #090f3b, #090f3b, #090f3b);
+  }
+  
+.grad-to-right {
+    background-image: linear-gradient(to right, #090f3b, #090f3b, #090f3b);
+  }
+/* .grad-to-bottom {
+    background-image: linear-gradient(to bottom, #090f3b, #090f3b, #090f3b);
+  }
+.grad-to-top {
+    background-image: linear-gradient(to top, #090f3b, #090f3b, #090f3b);
+  }
+  
+.grad-to-right {
+    background-image: linear-gradient(to right, #090f3b, #090f3b, #090f3b);
+  } */
+/* .grad-to-bottom {
     background-image: linear-gradient(to bottom, #87CEEB, #ADD8E6, #B0E0E6);
   }
 .grad-to-top {
@@ -42,7 +62,7 @@
   
 .grad-to-right {
     background-image: linear-gradient(to right, #B0E0E6, #ADD8E6, #87CEEB);
-  }
+  } */
 
 /* .grad-to-bottom {
     background-image: linear-gradient(to bottom, #D42F27,#D93C29,#F6792E);
