@@ -23,7 +23,7 @@ const Ambassadors = () => {
     api: "/ambassadors",
     method: "DELETE",
     onSuccess: () => {
-        toast('Ambassador deleted successfully')
+        toast('Manager deleted successfully')
     } 
 })
 
@@ -75,9 +75,9 @@ const colums = [
     extra: true,
     custom: (val: string, meta: any) => {
       return  (
-        <div className="gap-4 flex items-center justify-left">
-            {/* <button onClick={() => deleteAdvisory(meta?._id, `advisory/${meta?._id}`)} className="p-2 px-4 bg-red-600 text-white rounded-full">Delete</button> */}
-          <BiEdit onClick={() => router.push(`/admin/ambassadors/${meta?._id}`)} size="1.2rem" className="cursor-pointer" />
+        <div className="flex items-center gap-4 justify-left">
+            {/* <button onClick={() => deleteAdvisory(meta?._id, `advisory/${meta?._id}`)} className="p-2 px-4 text-white bg-red-600 rounded-full">Delete</button> */}
+          <BiEdit onClick={() => router.push(`/admin/management/${meta?._id}`)} size="1.2rem" className="cursor-pointer" />
           <MdOutlineDelete onClick={() => deleteAmbassador(meta?._id, `ambassadors/${meta?._id}`)} size="1.2rem" className="text-red-400 cursor-pointer" />
         </div>
       )
@@ -113,10 +113,10 @@ const colums = [
         <link rel="icon" href="/faviconimg.png" />
       </Head>
       {(loading || posting) && <Loader modalOpen={true} />}
-      <div className='p-4 py-12 sm:px-12 h-full overflow-y-auto'>
-        <div className="flex items-center gap-4 justify-between mb-16">
-            <h1 className='text-3xl text-black/70 font-argentinum'>Ambassadors</h1>
-            <Button onClick={() => router.push("/admin/ambassadors/add")} className="text-white px-4 sm:px-6 py-2 rounded-xl text-sm">Add ambassadors</Button>
+      <div className='h-full p-4 py-12 overflow-y-auto sm:px-12'>
+        <div className="flex items-center justify-between gap-4 mb-16">
+            <h1 className='text-3xl text-black/70 font-argentinum'>Management Team</h1>
+            <Button onClick={() => router.push("/admin/management/add")} className="px-4 py-2 text-sm text-white sm:px-6 rounded-xl">Add Team Member</Button>
         </div>
         <Table<IAmbassador> data={data} columns={colums} className={''} />
       </div>

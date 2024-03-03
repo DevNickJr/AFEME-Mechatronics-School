@@ -107,11 +107,11 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
               {/* <p className="mb-3 text-lg font-bold text-primary">STUDY WITH US</p> */}
               <h1 className="mb-3 text-4xl font-extrabold capitalize md:text-6xl">{cms?.hero?.header}</h1>
               <p className="md:text-lg">{cms?.hero?.text}</p>
-              <a href ="https://box.reinsys.net/brilliant/" className="flex items-center justify-between max-w-md text-sm bg-gray-100 rounded-xl md:text-base">
+              <Link href ="/contact-us" className="flex items-center justify-between max-w-md text-sm bg-gray-100 rounded-xl md:text-base">
                 <p className="ml-4">Lets get started</p>
-                {/* <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white grad-to-right md:text-base rounded-xl w-fit">Connect with us</a> */}
+                {/* <a href={`/about`} className="px-6 py-3 text-sm text-white grad-to-right md:text-base rounded-xl w-fit">Connect with us</a> */}
                 <Button className="px-5 py-3 text-white rounded-xl md:py-4">Connect with us</Button>
-              </a>
+              </Link>
             </div>
             <div className="relative flex flex-col justify-end order-1 w-full min-h-96 lg:order-2">
               <Image width={100} height={100} src={cms?.hero?.image || HeroImg} alt="" className="object-contain object-top w-full h-full max-h-[450px]" />
@@ -152,14 +152,31 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
           <div className="flex flex-col items-center max-w-2xl gap-4 mx-auto mb-12">
             {/* <h2 className="text-2xl font-bold text-primary">Our Programmes</h2> */}
             <h3 className="mb-3 text-3xl font-extrabold capitalize md:text-5xl">
-              Available Scholarship Levels
+              Courses we Offer
             </h3>
           </div>
-          <div className="grid gap-8 text-white md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 text-white md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
               <Image src={Primary1Img} alt="" className="w-16 h-16" />
+              <h5 className="mb-3 text-xl font-extrabold capitalize">Automotive Mechatronics Technology</h5>
+              <p className="text-white">Explore the Future of Automotive Innovation and Technology Integration.</p>
+            </div>
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
+              <Image src={UniversityImg} alt="" className="w-16 h-16" />
+              <h5 className="mb-3 text-xl font-extrabold capitalize">Electrical Electronics Technology Department</h5>
+              <p className="text-white">Empowering the Future through Cutting-edge Electrical and Electronics Expertise.</p>
+            </div>
+            <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
+              <Image src={PostGradImg} alt="" className="w-16 h-16" />
+              <h5 className="mb-3 text-xl font-extrabold capitalize">Welding And Fabrication Department</h5>
+              <p className="text-white">Crafting Excellence in Welding and Fabrication Techniques for a Solid Foundation.</p>
+            </div>
+
+
+            {/* <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
+              <Image src={Primary1Img} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Primary Education</h5>
-              <p className="text-white">Building Strong Foundations for Lifelong Learning</p>
+              <p className="text-white"> The Automotive Mechatronics Technology</p>
             </div>
             <div className="flex flex-col items-center w-full gap-3 p-8 py-12 bg-primary rounded-2xl">
               <Image src={SecondaryImg} alt="" className="w-16 h-16" />
@@ -175,7 +192,7 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
               <Image src={PostGradImg} alt="" className="w-16 h-16" />
               <h5 className="mb-3 text-2xl font-extrabold capitalize">Postgraduate Education</h5>
               <p className="text-white">Elevate Your Expertise and Propel Your Career Forward</p>
-            </div>
+            </div> */}
           </div>
         </section>
         {/* <section className="py-12 section md:py-20">
@@ -231,7 +248,7 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
        {/* <Ambassadors /> */}
         
         {/* <Winners /> */}
-        <section className="py-12 section md:py-20 grad-to-right">
+        {/* <section className="py-12 section md:py-20 grad-to-right">
           <div className="grid gap-4 text-white lg:grid-cols-2 md:gap-12">
             <div className="flex flex-col flex-1 gap-4 md:pb-16">
               <h2 className="mb-3 text-3xl font-extrabold capitalize md:text-5xl">Become Part of Us on Our Platform</h2>
@@ -262,7 +279,72 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
                     <p>Postgraduate Education</p>
                   </div>
               </div>
-              <a href={`https://box.reinsys.net/brilliant/`} className="px-6 py-3 text-sm text-white bg-gold md:text-base rounded-xl w-fit">Apply Now</a>
+              <a href={`/about`} className="px-6 py-3 text-sm text-white bg-gold md:text-base rounded-xl w-fit">Apply Now</a>
+            </div>
+            <div className="w-full h-full min-h-96 md:min-h-[500px] relative flex justify-center items-center">
+              <div className="absolute -z-0 flex justify-center items-center bg-gold rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
+              <Image src={GradImg} alt="" className="relative z-10 object-cover w-full h-full" />
+            </div>
+          </div>
+        </section> */}
+        <section className="py-12 section md:py-20 grad-to-right">
+          <div className="grid gap-4 text-white lg:grid-cols-2 md:gap-12">
+            <div className="flex flex-col flex-1 gap-4 md:pb-16">
+              <h2 className="mb-3 text-3xl font-extrabold capitalize md:text-5xl">Explore Our Departments and Courses</h2>
+              <p className="mb-4 md:text-lg">Discover the diverse courses offered by our three main departments, providing a comprehensive foundation for your educational journey.</p>
+
+              {/* Automotive Mechatronics Technology Department */}
+              <div className="mb-2">
+                <h3 className="mb-3 text-xl font-bold capitalize">Automotive Mechatronics Technology Department</h3>
+                {/* <p>FIRST SEMESTER</p>
+                <ul>
+                  <li>Use of English - GNS 101</li>
+                  <li>Entrepreneurship Development - END 101</li>
+                  <li>Algebra and Elementary Trigonometry - MTH 101</li>
+                </ul>
+                <p>SECOND SEMESTER</p>
+                <ul>
+                  <li>Innovation and Acquisition of Technology - WFC 102</li>
+                  <li>Calculus - MTH 102</li>
+                  <li>Engineering Materials - WFC 104</li>
+                </ul> */}
+              </div>
+
+              {/* Electrical Electronics Technology Department */}
+              <div className="mb-2">
+                <h3 className="mb-3 text-xl font-bold capitalize">Electrical Electronics Technology Department</h3>
+                {/* <p>FIRST SEMESTER</p>
+                <ul>
+                  <li>Basics of Communication - CSK 501</li>
+                  <li>Algebra and Elementary Trigonometry - MAT 101</li>
+                  <li>Technical Drawing - MEC 102</li>
+                </ul>
+                <p>SECOND SEMESTER</p>
+                <ul>
+                  <li>Logic and Linear Algebra - MAT 112</li>
+                  <li>Circuit Theory I - EET 121</li>
+                  <li>Electronics II - EET 123</li>
+                </ul> */}
+              </div>
+
+              {/* Welding And Fabrication Department */}
+              <div>
+                <h3 className="mb-3 text-xl font-bold capitalize">Welding And Fabrication Department</h3>
+                {/* <p>FIRST SEMESTER</p>
+                <ul>
+                  <li>Basics of Communication Skills - CSK 501</li>
+                  <li>Citizen Education - GNS</li>
+                  <li>Algebra and Elementary Trigonometry - MTH 101</li>
+                </ul>
+                <p>SECOND SEMESTER</p>
+                <ul>
+                  <li>Logic and Linear Algebra - MTH 112</li>
+                  <li>Computer Aided Design (CAD) - COM 201</li>
+                  <li>Electronics II - EET 123</li>
+                </ul> */}
+              </div>
+
+              <a href={`/about`} className="px-6 py-3 text-sm text-white bg-gold md:text-base rounded-xl w-fit">Discover</a>
             </div>
             <div className="w-full h-full min-h-96 md:min-h-[500px] relative flex justify-center items-center">
               <div className="absolute -z-0 flex justify-center items-center bg-gold rounded-full w-72 h-72 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"></div>
@@ -270,6 +352,7 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
             </div>
           </div>
         </section>
+
         <section className="py-12 section md:py-20">
           <h2 className="mb-12 text-3xl font-extrabold text-center capitalize md:text-5xl">News & <br />Updates</h2>
           <div className="grid gap-8 md:grid-cols-3">
@@ -317,7 +400,7 @@ export default function Home({ cms, advisory, news }: { cms: ICms, advisory: IAd
           <div className="flex flex-col items-center max-w-3xl gap-4 text-center">
             <h3 className="mb-2 text-3xl font-extrabold capitalize md:text-5xl">Sign up for Our Scholarship Program Now</h3>
             <p className="mb-4">We understand that you&#39;re looking for a bright new future, filled with endless possibilities and opportunities for personal and professional growth. Your quest for a better tomorrow starts right here, with us.</p>
-            <a href={'https://box.reinsys.net/brilliant/'} className="p-5 px-6 py-3 text-sm font-bold text-black bg-white rounded-full md:py-5 md:text-base md:px-10">Sign Up</a>
+            <Link href={'/contact-us'} className="p-5 px-6 py-3 text-sm font-bold text-black bg-white rounded-full md:py-5 md:text-base md:px-10">Sign Up</Link>
           </div>
         </section>
         <Advisory advisory={advisory} />

@@ -18,8 +18,8 @@ import Loader from '@/components/Loader';
 // Plot 740, Agunwa Anaekwe Street
 // Wuye, FCT-Abuja
 // Tel: 0700-0033-3435
-// Email: info@bbscholarships.org
-// Website: www.bbscholarships.org
+// Email: info@afme.org
+// Website: www.afme.org
 
 const initialState: IFeedback = {
     email: '',
@@ -75,22 +75,22 @@ const ContactUs = () => {
                     <div>
                         <h3 className="mb-3 text-xl font-bold text-gray-800 font-argentinum">Email/Website Address</h3>
                         <div className="text-lg text-[#6D6D6D] font-medium flex flex-col">
-                            <a href="http://www.bbscholarships.org" className="hover:text-primary">
-                                http://www.bbscholarships.org
+                            <a href="http://www.afme.org" className="hover:text-primary">
+                                http://www.afme.org
                             </a>
                             {/* <a href="https://box.reinsys.net/brilliant/" className="hover:text-primary">
                                 https://box.reinsys.net/brilliant/
                             </a> */}
-                            <a href="mailto:info@bbscholarships.org" className="hover:text-primary">
-                            info@bbscholarships.org
+                            <a href="mailto:info@afme.org" className="hover:text-primary">
+                            info@afme.org
                             </a>
                         </div>
                         {/* <div className="text-sm text-[#6D6D6D] font-medium flex flex-col">
-                            <a href="www.bbscholarships.org" className="hover:text-primary">
-                                www.bbscholarships.org
+                            <a href="www.afme.org" className="hover:text-primary">
+                                www.afme.org
                             </a>
-                            <a href="mailto:info@bbscholarships.org" className="hover:text-primary">
-                                info@bbscholarships.org
+                            <a href="mailto:info@afme.org" className="hover:text-primary">
+                                info@afme.org
                             </a>
                         </div> */}
                     </div>

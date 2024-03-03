@@ -48,9 +48,9 @@ const SideNav = ({ }) => {
                     <RiTeamLine size={"1.3rem"} />
                     Advsiory Board
                 </Link>
-                <Link className={`py-2.5 pl-6 text-sm flex items-center gap-2 ${pathname.includes("ambassadors") && 'text-white'}`} href={"/admin/ambassadors"}>
+                <Link className={`py-2.5 pl-6 text-sm flex items-center gap-2 ${pathname.includes("management") && 'text-white'}`} href={"/admin/management"}>
                     <AiTwotoneGold size={"1.3rem"} />
-                    Ambassadors
+                    Mangement Team
                 </Link>
                 <Link className={`py-2.5 pl-6 text-sm flex items-center gap-2 ${pathname.includes("cms") && 'text-white'}`} href={"/admin/cms"}>
                     <AiOutlineHome size={"1.3rem"} />
